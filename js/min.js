@@ -41,9 +41,6 @@ $(function () {
         }, 1000);
     });
     
-    // Window Height Header 
-    $(".head").height($(window).height());
-    
     //Add Class Secleted For Tabs
     $('.tabs ul li').click(function (e) {
         e.preventDefault();
