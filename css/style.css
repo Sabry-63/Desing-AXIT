@@ -102,7 +102,7 @@ p{
     position: relative;
     background-size: cover;
     background-attachment: fixed;
-    margin-bottom: 100px;
+    padding-bottom: 150px;
 }
 @media(min-width:992px){
     .head{
@@ -117,7 +117,7 @@ p{
     width: 100%;
     z-index: 1;
     display: block;
-    bottom: -35px;
+    bottom: -5px;
 }
 .head .title_head {
     font-size: 70px;
