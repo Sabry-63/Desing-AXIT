@@ -1,4 +1,6 @@
 /*global $ */
+
+
 $(function () {
     'use strict';
     $('.navbar .nav-link').click(function (e) {
@@ -8,9 +10,8 @@ $(function () {
         $('html, body').animate({
             scrollTop: $($(this).data('scroll')).offset().top
         }, 1000);
+        $('.navbar-collapse').removeClass('show');
     });
-    
-    
     // Add Class Fiexd To Navbar 
     $(window).scroll(function () {
         if ($(window).scrollTop() > $('.sochial').offset().top - 30) {
@@ -31,6 +32,9 @@ $(function () {
             $('.to_top').fadeOut(300);
         }
         
+        if ($(window).scrollTop() > 1) {
+            $('.navbar-collapse').removeClass('show');
+        }
     });
     // End Add Class
     
@@ -48,4 +52,6 @@ $(function () {
         $('.tabs .tabs_contnet div').hide();
         $($(this).data('class')).fadeIn();
     });
+    
+    
 });
